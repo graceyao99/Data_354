@@ -6,11 +6,8 @@ from datetime import datetime
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 
-# Create your views here.
 
-@login_required
 def index(request):
-    # return HttpResponse('hello world !')
     return render(request, 'home/index.html', {})
 
 def signin(request):
